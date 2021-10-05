@@ -2,14 +2,12 @@ use crate::config::KubeConfig;
 use crate::errors::KubernetesError;
 use base64;
 use chrono::DateTime;
-use chrono::DateTime;
 use http::StatusCode;
 use isahc::{
     config::CaCertificate, config::ClientCertificate, config::Configurable, config::PrivateKey,
     config::SslOption, Body, HttpClient, Request,
 };
 use k8s_openapi::{api::core::v1 as api, ResponseBody};
-use std::env;
 use std::env;
 use std::fs;
 use std::{io::Read, io::Write};
